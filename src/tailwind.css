@@ -86,4 +86,17 @@
     .link {
         @apply relative font-medium text-stiletto-500 hover:underline;
     }
+    section .link[target]:not(.download):after,
+    section a[target]:after,
+    section .link[target]:not(.download):after,
+    section a[target]:after {
+        @apply relative top-[2px] inline-block ml-0.5 h-4 w-4 bg-no-repeat;
+        content: '';
+    }
+    section .link[target]:not(.download):after,
+    section a[target]:after,
+    section .link[target]:not(.download):after,
+    section a[target]:after {
+        @apply bg-link;
+    }
 }
